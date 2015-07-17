@@ -20,22 +20,25 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="628_CaesarPassword.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MKSYGamble.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="395_JHWith11Multiple.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="43_SomeCharRemove.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="601_MKYamiyami.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TreasureHunterBS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HorseKnight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SSsBiBimRamen_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="583_SSsBiBimRamen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="475_MinusQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="245_SecmemBrowser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

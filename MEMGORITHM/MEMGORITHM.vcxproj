@@ -81,12 +81,13 @@
     <Text Include="input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="628_CaesarPassword.cpp" />
+    <ClCompile Include="HorseKnight.cpp" />
+    <ClCompile Include="475_MinusQueue.cpp" />
     <ClCompile Include="MKSYGamble.cpp" />
-    <ClCompile Include="395_JHWith11Multiple.cpp" />
+    <ClCompile Include="245_SecmemBrowser.cpp" />
+    <ClCompile Include="583_SSsBiBimRamen.cpp" />
+    <ClCompile Include="SSsBiBimRamen_c.c" />
     <ClCompile Include="TreasureHunterBS.cpp" />
-    <ClCompile Include="43_SomeCharRemove.cpp" />
-    <ClCompile Include="601_MKYamiyami.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

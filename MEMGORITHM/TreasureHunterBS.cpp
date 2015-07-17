@@ -6,6 +6,13 @@
 //
 //#include <iostream>
 //using namespace std;
+//
+//struct point {
+//	int x;
+//	int y;
+//	int time;
+//};
+//
 //int main()
 //{
 //
@@ -41,86 +48,80 @@
 //				hour[i][j] = 0;
 //			}
 //		}
-//		
-//		int elapHour = 1;
+//
+//		// queue 형식 구현
+//		struct point mQueue[2501];
+//
 //		for (int r = 0; r < row; r++)
 //		{
 //			for (int c = 0; c < col; c++)
 //			{
 //				if (map[r][c] == 'W')
 //					continue;
+//
+//
+//				int qPtr = 0;
+//				int top = 0;
 //				
-//				// 매 점에서부터의 최단거리 계산
 //				visit[r][c] = true;
-//				hour[r][c] = elapHour;
-//				int nowMove = 0;
-//				while (1)
+//				hour[r][c] = 0;
+//
+//				mQueue[top].x = r;
+//				mQueue[top].y = c;
+//				mQueue[top++].time = 0;
+//
+//				while (qPtr < top)
 //				{
+//					int x = mQueue[qPtr].x;
+//					int y = mQueue[qPtr].y;
+//					int elapHour = mQueue[qPtr++].time;
 //					elapHour++;
-//					for (int i = 0; i < row; i++)
+//					
+//					if ((x - 1 >= 0) && (map[x - 1][y] == 'L') && (visit[x - 1][y]== false))
 //					{
-//						for (int j = 0; j < col; j++)
-//						{
-//							if ( hour[i][j] == elapHour-1 )
-//							{
-//								if ((i - 1 >= 0) && (map[i - 1][j] == 'L') && (visit[i - 1][j] == false))
-//								{
-//									visit[i - 1][j] = true;
-//									hour[i - 1][j] = elapHour;
-//									nowMove++;
-//								}
-//								if ((j - 1 >= 0) && (map[i][j - 1] == 'L') && (visit[i][j - 1] == false))
-//								{
-//									visit[i][j - 1] = true;
-//									hour[i][j - 1] = elapHour;
-//									nowMove++;
-//								}
-//								if ((i + 1 < row) && (map[i + 1][j] == 'L') && (visit[i + 1][j] == false))
-//								{
-//									visit[i + 1][j] = true;
-//									hour[i + 1][j] = elapHour;
-//									nowMove++;
-//								}
-//								if ((j + 1 < col) && (map[i][j + 1] == 'L') && (visit[i][j + 1] == false))
-//								{
-//									visit[i][j + 1] = true;
-//									hour[i][j + 1] = elapHour;
-//									nowMove++;
-//								}
-//							}
-//						}
+//						visit[x - 1][y] = true;
+//						hour[x - 1][y] = elapHour;
+//						mQueue[top].x = x - 1;
+//						mQueue[top].y = y;
+//						mQueue[top++].time = elapHour;
 //					}
-//
-//
-//					if (nowMove == 0)
+//					if ((y - 1 >= 0) && (map[x][y - 1] == 'L') && (visit[x][y - 1] == false))
 //					{
-//						int max = 0;
-//						for (int i = 0; i < row; i++)
-//						{
-//							for (int j = 0; j < col; j++)
-//							{
-//								if (hour[i][j] > max)
-//									max = hour[i][j];
-//							}
-//						}
-//						
-//						if (MAX < max)
-//							MAX = max;
-//						break;
-//
+//						visit[x][y - 1] = true;
+//						hour[x][y - 1] = elapHour;
+//						mQueue[top].x = x;
+//						mQueue[top].y = y - 1;
+//						mQueue[top++].time = elapHour;
 //					}
-//					nowMove = 0;
+//					if ((x + 1 < row) && (map[x + 1][y] == 'L') && (visit[x + 1][y] == false))
+//					{
+//						visit[x + 1][y] = true;
+//						hour[x + 1][y] = elapHour;
+//						mQueue[top].x = x + 1;
+//						mQueue[top].y = y;
+//						mQueue[top++].time = elapHour;
+//					}
+//					if ((y + 1 < col) && (map[x][y + 1] == 'L') && (visit[x][y + 1] == false))
+//					{
+//						visit[x][y + 1] = true;
+//						hour[x][y + 1] = elapHour;
+//						mQueue[top].x = x;
+//						mQueue[top].y = y + 1;
+//						mQueue[top++].time = elapHour;
+//					}
+//					
+//					if (elapHour > MAX)
+//						MAX = elapHour;
+//
 //				}
 //
 //				// 초기화
-//				elapHour = 1;
 //				for (int i = 0; i < row; i++)
 //				{
 //					for (int j = 0; j < col; j++)
 //					{
 //						visit[i][j] = false;
 //						hour[i][j] = 0;
-//						
 //					}
 //				}
 //
