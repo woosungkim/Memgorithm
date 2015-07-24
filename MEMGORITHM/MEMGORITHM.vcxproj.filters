@@ -26,19 +26,43 @@
     <ClCompile Include="TreasureHunterBS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HorseKnight.cpp">
+    <ClCompile Include="521_LineDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SSsBiBimRamen_c.c">
+    <ClCompile Include="412_CopAndThief.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="583_SSsBiBimRamen.cpp">
+    <ClCompile Include="446_Grid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="475_MinusQueue.cpp">
+    <ClCompile Include="363_SumOfCow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="245_SecmemBrowser.cpp">
+    <ClCompile Include="SmartTrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NumOfBit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="031_Bouncy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="473_Maze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="705_MaxOnTriangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t3re.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
