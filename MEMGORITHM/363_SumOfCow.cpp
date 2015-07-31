@@ -28,70 +28,39 @@
 //
 //		*/
 //
+//		int N;
+//		cin >> N;
 //
-//		int n;
-//		cin >> n;
-//		
-//		for (int i = 0; i < n; i++)
-//			nAvailSee[i] = 0;
-//
-//		for (int i = 0; i < n; i++)
-//			cin >> hi[i];
-//
-//		int idxMAX = n - 1;
-//		int idxMAX2 = 0;
-//		int cntAvailSee = 0;
-//		for (int i = n - 2; i >= 0; i--)
+//		for (int i = 1; i <= N; i++)
 //		{
-//
-//			if (hi[i] >= hi[i + 1])
-//			{
-//				if (hi[i] >= hi[idxMAX])
-//				{
-//					
-//					if (!(hi[i] == hi[idxMAX]))
-//					{
-//						nAvailSee[i] = nAvailSee[idxMAX] + (idxMAX - i);
-//						idxMAX = i;
-//					}
-//					else
-//					{
-//						if ( i != idxMAX && idxMAX != i+1)
-//							nAvailSee[i] = (idxMAX - i-1);
-//					}
-//
-//					if ( i - 1 >= 0 )
-//						idxMAX2 = i - 1;
-//				}
-//				else if (hi[i] > hi[idxMAX2])
-//				{
-//					nAvailSee[i] = idxMAX - i - 1;
-//					idxMAX2 = i;
-//				}
-//				else
-//				{
-//					if (hi[i] == hi[i + 1])
-//						cntAvailSee = 0;
-//					else
-//						nAvailSee[i] = ++cntAvailSee;
-//				}
-//			}
-//			else
-//			{
-//				cntAvailSee = 0;
-//			}
-//
-//			cout << idxMAX << "  " << idxMAX2 << " " << endl;;
+//			cin >> hi[i];
+//			nAvailSee[i] = 0;
 //		}
 //
-//		for (int i = 0; i < n; i++)
-//			cout<< nAvailSee[i] << endl;
-//
+//		for (int i = N-1 ; i > 0; i--)
+//		{
+//			if (hi[i] > hi[i + 1])
+//			{
+//				int cnt = 0;
+//				for (int j = i + 1; j <= N; j++)
+//				{
+//					if (hi[i] > hi[j])
+//						cnt++;
+//					else 
+//						break;
+//				}
+//				nAvailSee[i] = cnt;
+//			}
+//			else
+//				nAvailSee[i] = 0;
+//		}
+//			
 //		int sum = 0;
-//		for (int i = 0; i < n; i++)
+//		for (int i = 1; i <= N; i++)
 //			sum += nAvailSee[i];
 //
-//		cout << sum << endl;
+//		cout << sum<< endl;
+//		
 //
 //	}
 //

@@ -1,0 +1,56 @@
+/*
+
+VCPP, GPP에서 사용
+
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int nCount;		/* 문제의 테스트 케이스 */
+
+	cin >> nCount;	/* 테스트 케이스 입력 */
+
+	for (int itr = 0; itr<nCount; itr++)
+	{
+
+		cout << "#testcase" << (itr + 1) << endl;
+
+		/*
+
+		알고리즘이 들어가는 부분
+
+		*/
+
+		int n;
+		cin >> n;
+
+		int num[41];
+		for (int i = 0; i < n; i++)
+			cin >> num[i];
+
+		int cNum;
+		cin >> cNum;
+
+		int sumAli = 0, sumMul = 0;
+
+		for (int i = 0; i < n; i++)
+		{
+			if (num[i] <= cNum)
+				if (cNum % num[i] == 0)
+					sumAli += num[i];
+
+			if (num[i] >= cNum)
+				if (num[i] % cNum == 0)
+					sumMul += num[i];
+		}
+		
+		cout << sumAli << endl << sumMul << endl;
+
+	}
+
+	return 0;	/* 반드시 return 0으로 해주셔야합니다. */
+
+}

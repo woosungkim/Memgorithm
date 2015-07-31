@@ -81,20 +81,19 @@
     <Text Include="input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="363_SumOfCow.cpp" />
-    <ClCompile Include="412_CopAndThief.cpp" />
-    <ClCompile Include="446_Grid.cpp" />
-    <ClCompile Include="521_LineDraw.cpp" />
-    <ClCompile Include="031_Bouncy.cpp" />
-    <ClCompile Include="473_Maze.cpp" />
-    <ClCompile Include="705_MaxOnTriangle.cpp" />
+    <ClCompile Include="103_RobotSearch.cpp" />
+    <ClCompile Include="FixBarnAfterLost2.cpp" />
+    <ClCompile Include="FixBarnAfterLost.cpp" />
+    <ClCompile Include="GuardKing.cpp" />
+    <ClCompile Include="IT3_4_AlphabetGame.cpp" />
+    <ClCompile Include="IT3_5_TravelCost.cpp" />
+    <ClCompile Include="LongNumAddition.cpp" />
     <ClCompile Include="MKSYGamble.cpp" />
-    <ClCompile Include="NumOfBit.cpp" />
+    <ClCompile Include="Mosaic.cpp" />
+    <ClCompile Include="Mountaintop.cpp" />
+    <ClCompile Include="Paint.cpp" />
     <ClCompile Include="SmartTrain.cpp" />
-    <ClCompile Include="t1.cpp" />
-    <ClCompile Include="t2.cpp" />
     <ClCompile Include="t3.cpp" />
-    <ClCompile Include="t3re.cpp" />
     <ClCompile Include="TreasureHunterBS.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
